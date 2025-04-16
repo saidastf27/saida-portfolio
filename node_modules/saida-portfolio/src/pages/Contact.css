@@ -1,0 +1,93 @@
+.container-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 30px;
+  /*background: linear-gradient(135deg, #e0f7fa, #f3e5f5);*/
+}
+
+.card-cnt-glass-horizontal {
+  display: flex;
+  flex-direction: row; /* 👈 Disposition horizontale */
+  width: 100%;
+  max-width: 1100px; /* 👈 Plus large */
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(15px);
+  border-radius: 30px;
+  padding: 4rem;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.card-header-cnt-glass {
+  width: 100%; /* Prend toute la largeur */
+  text-align: center;
+  margin-top: 80px;
+  margin-right: 60px;
+  color: #003366;
+}
+.card-header-cnt-glass h4 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.card-header-cnt-glass p {
+  font-size: 1.1rem;
+  color: #003366cc;
+}
+
+.card-body-cnt-glass-horizontal {
+  display: flex;
+  flex-direction: column; /* 👈 Chaque section sera dans une colonne à l'intérieur de la carte horizontale */
+  gap: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-info {
+  margin-bottom: 30px;
+  padding-left: 10px;
+  border-left: 3px solid #0077b6;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-info h5 {
+  font-size: 1.75rem;
+  color: #003366;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 1.4rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.contact-link {
+  color: #0077b6;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.contact-link:hover {
+  color: #005f8f;
+  text-decoration: underline;
+  transform: translateX(3px);
+}
+
+/* Responsiveness: Ajuster pour les petits écrans */
+@media (max-width: 768px) {
+  .card-cnt-glass-horizontal {
+    flex-direction: column; /* 👈 Empile les sections sur les petits écrans */
+    max-width: 90%;
+  }
+
+  .card-body-cnt-glass-horizontal {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,30 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* App.css */
+.chatbot-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  z-index: 9999; /* Pour s'assurer que le bouton est au-dessus de tout autre contenu */
+}
+
+.btn-ai {
+  transition: transform 0.2s ease;
+
+}
+
+.chatbot-link:hover {
+  opacity: 0.8; /* Légère réduction de l'opacité au survol */
+  transform: scale(1.1);
+
+}
