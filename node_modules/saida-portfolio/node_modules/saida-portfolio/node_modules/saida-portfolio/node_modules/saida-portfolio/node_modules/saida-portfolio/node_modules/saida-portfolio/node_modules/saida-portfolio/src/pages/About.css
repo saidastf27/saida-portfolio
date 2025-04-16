@@ -1,0 +1,75 @@
+
+.container-about {
+  border-radius: 10px;
+    min-height: 100vh; 
+    display: flex;
+    justify-content: space-between; 
+    margin: 30px;
+    
+  }
+  .card-header-about{
+    border-radius: 15px;
+    background-color: rgb(123, 206, 254);
+    text-align: center;
+
+  }
+  .about-section-block {
+    background-color: #dfdfdf; /* Une couleur bleu clair pastel */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .about-section-block:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  p{
+    font-size: 18px;
+  }
+  
+  
+  .card-about {
+    background-color: #ffffff;
+    border-radius: 15px;
+
+  }
+  
+ 
+  .about-section-block {
+    background-color: #fff0f5; /* Rose pâle clair */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-section-block:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+   
+  }
+  /* Autres couleurs pastel douces pour chaque section */
+.about-section-block:nth-child(2) {
+  background-color: #e6f7ff; /* Bleu pâle plus doux */
+}
+
+.about-section-block:nth-child(3) {
+  background-color: #e9f7df; /* Vert pâle doux */
+}
+
+.about-section-block:nth-child(4) {
+  background-color: #fff7e6; /* Jaune pâle doux */
+}
+
+.about-section-block:nth-child(5) {
+  background-color: #f2e6ff; /* Violet pâle */
+}

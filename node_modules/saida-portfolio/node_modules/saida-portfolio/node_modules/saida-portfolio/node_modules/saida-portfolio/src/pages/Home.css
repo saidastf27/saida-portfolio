@@ -1,0 +1,83 @@
+.home-container {
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+    
+  }
+  .titre{
+    font-size: 3rem;
+    font-weight: 700;
+  color: #333;
+  transition: transform 0.3s ease;
+  }
+  .lead{
+    font-size: 1.8rem;
+  }
+  
+
+  .home-card {
+    position: relative;
+    display: block;
+    padding: 4.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);  /* Ombre plus grande pour une carte plus imposante */
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+ 
+  .home-card:hover {
+    transform: translateY(-15px);  /* Augmenté pour plus d'effet au survol */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);  /* Ombre plus marquée */
+  }
+  
+  .card-content h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #212529;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+
+  }
+  
+  .card-content p {
+    font-size: 1.3rem;
+    color: #676767;
+    margin: 0;
+  }
+  .bg-about {
+    background-color: #eff8ff; /* Bleu clair doux */
+  }
+  
+  .bg-projects {
+    background-color: #feefe7; /* Pêche très claire */
+  }
+  
+  .bg-contact {
+    background-color: #fffed5; /* Jaune doux et pastel */
+  }
+  
+  
+  @media screen and (max-width: 768px) {
+    .home-card {
+      padding: 2rem;  /* Moins de padding sur petits écrans */
+      height: auto;  /* Hauteur automatique pour les petits écrans */
+    }
+  
+    .titre {
+      font-size: 2.5rem;
+    }
+  }
+
+  
+
+  
+ 
+  

@@ -1,0 +1,111 @@
+/* Projects.css */
+
+/* Section title */
+.section-title {
+  font-size: 2rem;
+  color: #003566;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Projet principal */
+.projects-section h2 {
+  font-weight: bold;
+  color: #1a237e;
+}
+
+/* Cartes de projet */
+.project-card {
+  border-radius: 1rem;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  will-change: transform;
+  padding: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.05);
+  animation: slideUpFade 1s ease forwards;
+  opacity: 0;
+}
+
+.project-card:hover {
+  transform: scale(1.03) rotate(0.5deg) translateY(-15px);
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenu de la carte */
+.card-body-project {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Titre */
+.project-title {
+  color: #003566;
+  font-weight: 600;
+  font-size: 1.35rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Description */
+.project-description {
+  color: #31353a;
+  font-size: 1.3rem;
+  flex-grow: 1;
+}
+
+/* Technologies */
+.project-tech {
+  font-weight: 500;
+  color: black;
+  font-size: 1.2rem;
+  margin-top: 90px;
+}
+
+/* Animation */
+@keyframes slideUpFade {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animation en cascade sur les cartes */
+.project-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.project-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.project-card:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.project-card:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+/* Couleurs spécifiques */
+.project-card.motorola {
+  background-color: #e0f7fa; /* Bleu clair */
+}
+
+.project-card.chat {
+  background-color: #ffe0b2; /* Orange clair */
+}
+
+.project-card.recruitment {
+  background-color: #f1f8e9; /* Vert clair */
+}
+
+.project-card.management {
+  background-color: #f3e5f5; /* Violet clair */
+}
