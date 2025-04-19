@@ -33,7 +33,7 @@ function Chatbot() {
     setLoading(true);
 
     try {
-      const res = await axios.post('http://backend-production-96af.up.railway.app/api/chat', {
+      const res = await axios.post('https://backend-production-96af.up.railway.app/api/chat', {
         message: input,
       });
       const botMessage = { role: 'bot', content: res.data.response };
