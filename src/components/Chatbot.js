@@ -13,7 +13,7 @@ function Chatbot() {
   useEffect(() => {
     const fetchMessages = async () => {
       try {
-        const res = await axios.get('http://backend-production-96af.up.railway.app/api/messages');
+        const res = await axios.get('https://backend-production-96af.up.railway.app/api/messages');
 
         setMessages(res.data);
       } catch (error) {
