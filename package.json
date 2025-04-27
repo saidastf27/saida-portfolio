@@ -2,7 +2,7 @@
   "name": "saida-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://saida-stifi-b81ut2kzj-saida-stifis-projects.vercel.app",
+  "homepage": "https://saida-stifi.vercel.app",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
