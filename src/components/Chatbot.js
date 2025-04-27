@@ -13,7 +13,8 @@ function Chatbot() {
   useEffect(() => {
     const fetchMessages = async () => {
       try {
-        const res = await axios.get('http://localhost:5000/api/messages');
+        const res = await axios.get('https://backend-production-96af.up.railway.app/api/messages');
+
         setMessages(res.data);
       } catch (error) {
         console.error('Error loading messages:', error);
@@ -32,10 +33,10 @@ function Chatbot() {
     setLoading(true);
 
     try {
-      const res = await axios.post('http://localhost:5000/api/chat', {
+      const res = await axios.post('https://backend-production-96af.up.railway.app/api/chat', {
         message: input,
       });
-      const botMessage = { role: 'bot', content: res.data.response };
+      const botMessage = { role: 'bot', content: res.data.reply }; 
       setMessages((prev) => [...prev, botMessage]);
     } catch (error) {
       const errorMessage = error.response
