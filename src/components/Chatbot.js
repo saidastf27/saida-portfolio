@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import { motion } from 'framer-motion';
 import { FaUser, FaRobot } from 'react-icons/fa';
+import './Chatbot.css';
 
 function Chatbot() {
   const [input, setInput] = useState('');
