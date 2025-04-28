@@ -90,6 +90,11 @@ h4 {
   .card-header-about h2 {
     font-size: 1.3rem; /* Taille encore plus petite sur très petits écrans */
   }
+  .container-about {
+  
+
+    margin: 0px;
+  }
 
   p {
     font-size: 14px; /* Réduit encore plus la taille des paragraphes */
