@@ -39,3 +39,21 @@
   border-radius: 10px;
   box-shadow: 0 0 0 2px #a5b4fc;
 }
+/* Ajouts spécifiques pour les petits écrans */
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.8rem; /* Réduire la taille sur mobile */
+  }
+
+  .navbar-nav {
+    font-size: 1.2rem; /* Réduire la taille des liens */
+  }
+
+  .navbar-toggler {
+    border-color: #5e60ce;  /* Bordure visible sur le bouton hamburger */
+  }
+
+  .navbar-toggler-icon {
+    background-color: #5e60ce;  /* Couleur de l'icône du bouton hamburger */
+  }
+}
