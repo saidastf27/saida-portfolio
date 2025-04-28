@@ -18,12 +18,11 @@ function Navbar() {
 
   return (
     <motion.nav
-  initial={{ y: -30, opacity: 0 }}
-  animate={{ y: 0, opacity: 1 }}
-  transition={{ duration: 0.6, ease: "easeOut" }}
-  className="navbar navbar-expand-lg sticky-top"
->
-
+      initial={{ y: -30, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="navbar navbar-expand-lg navbar-light sticky-top"
+    >
       <div className="container">
         <motion.div
           className="navbar-brand fw-bold"
@@ -35,15 +34,20 @@ function Navbar() {
           </Link>
         </motion.div>
 
+        {/* Menu Hamburger */}
         <button
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
+        {/* Menu Items */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             {navLinks.map(({ path, label }, index) => {
