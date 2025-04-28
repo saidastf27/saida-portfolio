@@ -54,9 +54,7 @@
     font-size: 1.2rem; /* Réduire la taille des liens */
   }
 
-  .navbar-toggler {
-    border-color: #5e60ce; /* Bordure visible sur le bouton hamburger */
-  }
+ 
 
   .navbar-collapse {
     text-align: center; /* Centrer les éléments du menu quand ils sont dépliés */
