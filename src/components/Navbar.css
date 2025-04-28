@@ -39,10 +39,15 @@
   border-radius: 10px;
   box-shadow: 0 0 0 2px #a5b4fc;
 }
+
 /* Ajouts spécifiques pour les petits écrans */
 @media screen and (max-width: 768px) {
+  .navbar {
+    block-size: auto; /* Ajuste la taille du navbar sur les petits écrans */
+  }
+
   .navbar-brand {
-    font-size: 1.8rem; /* Réduire la taille sur mobile */
+    font-size: 2rem; /* Réduire la taille de la marque sur mobile */
   }
 
   .navbar-nav {
@@ -50,8 +55,18 @@
   }
 
   .navbar-toggler {
-    border-color: #5e60ce;  /* Bordure visible sur le bouton hamburger */
+    border-color: #5e60ce; /* Bordure visible sur le bouton hamburger */
   }
 
-  
+  .navbar-collapse {
+    text-align: center; /* Centrer les éléments du menu quand ils sont dépliés */
+  }
+
+  .navbar-nav {
+    margin-top: 10px;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 10px; /* Espacement entre les éléments de navigation */
+  }
 }
