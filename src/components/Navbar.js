@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-
 import "./Navbar.css";
 import { motion } from "framer-motion";
 
 function Navbar() {
   const location = useLocation();
+  const [isNavOpen, setIsNavOpen] = useState(false); // État pour ouvrir/fermer le menu
 
   const navLinks = [
     { path: "/", label: "Home" },
@@ -15,6 +15,13 @@ function Navbar() {
     { path: "/projects", label: "Projects" },
     { path: "/contact", label: "Contact" },
   ];
+
+  // Fonction pour fermer le menu après un clic
+  const handleLinkClick = () => {
+    if (window.innerWidth < 768) {
+      setIsNavOpen(false); // Fermer le menu sur mobile après un clic
+    }
+  };
 
   return (
     <motion.nav
@@ -38,17 +45,19 @@ function Navbar() {
         <button
           className="navbar-toggler"
           type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
+          onClick={() => setIsNavOpen(!isNavOpen)} // Toggle menu
           aria-controls="navbarNav"
-          aria-expanded="false"
+          aria-expanded={isNavOpen ? "true" : "false"}
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
         </button>
 
         {/* Menu Items */}
-        <div className="collapse navbar-collapse" id="navbarNav">
+        <div
+          className={`collapse navbar-collapse ${isNavOpen ? "show" : ""}`} // Toggle collapse
+          id="navbarNav"
+        >
           <ul className="navbar-nav ms-auto">
             {navLinks.map(({ path, label }, index) => {
               const isActive = location.pathname === path;
@@ -62,6 +71,7 @@ function Navbar() {
                   <Link
                     className={`nav-link ${isActive ? "active-link" : ""}`}
                     to={path}
+                    onClick={handleLinkClick} // Fermer le menu après le clic
                   >
                     {label}
                   </Link>
