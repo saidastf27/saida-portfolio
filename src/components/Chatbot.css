@@ -1,4 +1,6 @@
-
+.container-chat {
+  padding: 20px;
+}
 
 .card-chat {
   background: linear-gradient(to right, #f0f4f8, #e8eaf6);
@@ -89,6 +91,10 @@
   @media (max-width: 768px) {
     .alert {
       max-width: 100%;
+    }
+    .container-chat {
+      padding: 0;
+      margin: 0;
     }
   }
   
