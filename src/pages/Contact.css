@@ -81,13 +81,16 @@
 }
 
 /* Responsiveness: Ajuster pour les petits écrans */
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .card-cnt-glass-horizontal {
     flex-direction: column; /* 👈 Empile les sections sur les petits écrans */
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .card-body-cnt-glass-horizontal {
     flex-direction: column;
   }
+}
+@media (max-width: 576px) {
+
 }
