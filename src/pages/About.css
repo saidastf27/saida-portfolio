@@ -24,9 +24,6 @@
     transform: scale(1.05);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   }
-  p{
-    font-size: 18px;
-  }
   
   
   .card-about {
@@ -50,9 +47,9 @@
   }
   
   p {
-    font-size: 18px;
+    font-size: 19px;
   }
-  
+
   h4 {
     font-size: 1.5rem;
    
@@ -72,4 +69,26 @@
 
 .about-section-block:nth-child(5) {
   background-color: #f2e6ff; /* Violet pâle */
+}
+@media (max-width: 576px) {
+  .card-header-about h2 {
+    font-size: 1.4rem; /* Taille encore plus petite sur très petits écrans */
+  }
+  .container-about {
+    
+      margin: 0px;
+      
+    }
+
+  p {
+    font-size: 16px; /* Réduit encore plus la taille des paragraphes */
+  }
+
+  h4 {
+    font-size: 1.1rem; /* Réduit encore la taille des titres */
+  }
+
+  .about-section-block {
+    padding: 10px; /* Réduit encore le padding */
+  }
 }
