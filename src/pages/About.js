@@ -35,7 +35,7 @@ function About() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1.2, delay: 0.6, ease: "easeOut" }}
           >
-            <motion.p className="lead">
+            <motion.p >
               Hello! I'm <strong>Saida Stifi</strong>, a passionate <strong>software developer</strong> with a solid background in programming
               and a growing expertise in <strong>data science</strong>. I'm driven by a deep desire to build intelligent, impactful, and user-focused solutions.
             </motion.p>
