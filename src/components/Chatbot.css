@@ -1,10 +1,16 @@
+.container-chat {
+  padding: 20px;
+}
+
 .card-chat {
-    background: linear-gradient(to right, #f0f4f8, #e8eaf6);
-    border: none;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    margin-bottom: 30px;
-  }
-  
+  background: linear-gradient(to right, #f0f4f8, #e8eaf6);
+  border-radius: 25px; /* plus doux et plus visible */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  overflow: hidden; /* pour que les enfants ne débordent pas */
+}
+
+ 
   .card-header-chat {
     background-color: rgb(123, 206, 254);
      border-radius:15px ;
