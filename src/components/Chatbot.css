@@ -91,6 +91,7 @@
   @media (max-width: 768px) {
     .alert {
       max-width: 100%;
+      margin: 0px;
     }
   }
   
