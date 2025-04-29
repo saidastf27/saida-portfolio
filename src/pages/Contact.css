@@ -85,7 +85,7 @@
   .card-cnt-glass-horizontal {
     flex-direction: column; /* 👈 Empile les sections sur les petits écrans */
     max-width: 100%;
-    margin: 15px;
+    padding: 15px;
   }
 
   .card-body-cnt-glass-horizontal {
